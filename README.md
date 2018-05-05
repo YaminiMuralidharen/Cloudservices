@@ -29,14 +29,16 @@ Select the scope as profile openid and email
 Replace YOUR_GOOGLE_CLIENT_ID with client id from developer console( ends with apps.googleusercontent.com)
       <meta name="google-signin-client_id" content="YOUR_GOOGLE_CLIENT_ID">
       
-15.In index.js, Replace REGION_NAME, IDENTITY_POOL_NAME, USER_POOL_ID, CLIENT_ID with your Cognito credentials 
+      
+14.In index.js, Replace REGION_NAME, IDENTITY_POOL_NAME, USER_POOL_ID, CLIENT_ID with your Cognito credentials 
     AWSCognito.config.region = 'REGION_NAME';
     var identityPoolId = 'IDENTITY_POOL_NAME';
     var poolData = { 
             UserPoolId : 'USER_POOL_ID',
             ClientId : 'CLIENT_ID'
         };
-16. Run the app on localhost on port 8080 with http-server
+        
+15. Run the app on localhost on port 8080 with http-server
    Use the command ->  http-server -o -p 8080
    
  
